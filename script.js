@@ -68,4 +68,14 @@ function countVowels(str) {
 }
  
 console.log(countVowels("RadwanhosEn"));
-// countVowels("Javascript")
+
+
+// Problem 5 statement:
+/*Write a function removeFirstAndLast that takes a string and returns it with the first and last character removed.*/
+
+function removeFirstAndLast(str) {
+  let sliceStr = str.slice(1, str.length-1);
+  return sliceStr
+}
+ 
+console.log(removeFirstAndLast("hello"));
