@@ -33,3 +33,18 @@ function reverseNumber(num) {
  
 console.log(reverseNumber(1234)); // Expected: 4321
 console.log(reverseNumber(7));    // Expected: 7
+
+
+// Task 3 Problem statement:
+/*Write a function getOddNumbers that takes a number n and returns an array of all odd numbers from 1 to n (inclusive).*/
+
+function getOddNumbers(n) {
+  let odds = [];
+  for (let i = 1; i <= n; i= i + 2) {
+    odds.push(i)
+  }
+ 
+  return odds;
+}
+ 
+console.log(getOddNumbers(17));
