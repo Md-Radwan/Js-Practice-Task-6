@@ -79,3 +79,24 @@ function removeFirstAndLast(str) {
 }
  
 console.log(removeFirstAndLast("hello"));
+
+
+// Problem 6 statement:
+/*Write a function isPalindrome that takes a string and returns true if it reads the same forwards and backwards, otherwise false. Assume lowercase, no spaces.*/
+
+function isPalindrome(str) {
+  let reverseStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    let reverse = str[i];    
+    reverseStr = reverseStr + reverse;
+  }
+  if (reverseStr === str) {
+    return true;
+  }else{
+    return false;
+  }
+  
+}
+ 
+console.log(isPalindrome("level")); // Expected: true
+console.log(isPalindrome("hello")); // Expected: false
