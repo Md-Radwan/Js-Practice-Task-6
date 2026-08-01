@@ -100,3 +100,22 @@ function isPalindrome(str) {
  
 console.log(isPalindrome("level")); // Expected: true
 console.log(isPalindrome("hello")); // Expected: false
+
+
+// Problem 7 statement:
+/*Write a function findShortestWord that takes a sentence and returns the shortest word in it.*/
+
+function findShortestWord(sentence) {
+  let words = sentence.split(" ");
+  let shortest = words[0];
+  for (const eachWord of words) {
+    if (eachWord.length < shortest.length) {
+      shortest = eachWord
+    }
+  }
+ 
+  return shortest;
+}
+
+console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
+console.log(findShortestWord("Hello, my friend!")); // Expected: "my"
