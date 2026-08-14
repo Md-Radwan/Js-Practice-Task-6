@@ -172,3 +172,17 @@ function keepEvenNumbers(numbers) {
 }
  
 // console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
+
+
+// Problem 11 statement: Write a function listKeys that takes an object and returns an array containing its property names (keys).
+
+function listKeys(obj) {
+  let keys = [];
+  for (const eachProperty in obj) {
+    keys.push(eachProperty)
+  }
+ 
+  return keys;
+}
+ 
+// console.log(listKeys({ name: "Sam", age: 25, city: "Dhaka" }));
