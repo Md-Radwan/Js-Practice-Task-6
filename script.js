@@ -119,3 +119,27 @@ function findShortestWord(sentence) {
 
 console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
 console.log(findShortestWord("Hello, my friend!")); // Expected: "my"
+
+
+// Problem 8 statement:
+/* Write a function findSecondSmallest that takes an array of numbers and returns the second smallest distinct value. */
+
+function findSecondSmallest(numbers) {
+  let smallest = numbers[0];
+  let secondSmallest = numbers[1];
+  // TODO: loop through and update smallest/secondSmallest correctly
+  for (let i = 0; i < numbers.length; i++) {
+    let current = numbers[i];
+    if (current < smallest) {
+      secondSmallest = smallest;
+      smallest = current;
+    } else if(current > smallest && current < secondSmallest){
+      secondSmallest = current;
+    }
+  }
+  
+  return secondSmallest;
+}
+ 
+console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
+
