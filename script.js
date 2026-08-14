@@ -12,9 +12,9 @@ function checkTemperature(temp) {
  
 }
  
-console.log(checkTemperature(35)); // Expected: "Hot"
-console.log(checkTemperature(10)); // Expected: "Cold"
-console.log(checkTemperature(20)); // Expected: "Normal"
+// console.log(checkTemperature(35)); // Expected: "Hot"
+// console.log(checkTemperature(10)); // Expected: "Cold"
+// console.log(checkTemperature(20)); // Expected: "Normal"
 
 
 
@@ -31,8 +31,8 @@ function reverseNumber(num) {
   return numberReverse
 }
  
-console.log(reverseNumber(1234)); // Expected: 4321
-console.log(reverseNumber(7));    // Expected: 7
+// console.log(reverseNumber(1234)); // Expected: 4321
+// console.log(reverseNumber(7));    // Expected: 7
 
 
 // Problem 3 statement:
@@ -47,7 +47,7 @@ function getOddNumbers(n) {
   return odds;
 }
  
-console.log(getOddNumbers(10));
+// console.log(getOddNumbers(10));
 
 
 // Problem 4 statement:
@@ -67,7 +67,7 @@ function countVowels(str) {
   return count;
 }
  
-console.log(countVowels("RadwanhosEn"));
+// console.log(countVowels("RadwanhosEn"));
 
 
 // Problem 5 statement:
@@ -78,7 +78,7 @@ function removeFirstAndLast(str) {
   return sliceStr
 }
  
-console.log(removeFirstAndLast("hello"));
+// console.log(removeFirstAndLast("hello"));
 
 
 // Problem 6 statement:
@@ -98,8 +98,8 @@ function isPalindrome(str) {
   
 }
  
-console.log(isPalindrome("level")); // Expected: true
-console.log(isPalindrome("hello")); // Expected: false
+// console.log(isPalindrome("level")); // Expected: true
+// console.log(isPalindrome("hello")); // Expected: false
 
 
 // Problem 7 statement:
@@ -117,8 +117,8 @@ function findShortestWord(sentence) {
   return shortest;
 }
 
-console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
-console.log(findShortestWord("Hello, my friend!")); // Expected: "my"
+// console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
+// console.log(findShortestWord("Hello, my friend!")); // Expected: "my"
 
 
 // Problem 8 statement:
@@ -140,7 +140,7 @@ function findSecondSmallest(numbers) {
   return secondSmallest;
 }
  
-console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
+// console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
 
 
 // Problem 9 statement: Write a function averageOfArray that takes an array of numbers and returns their average.
@@ -156,4 +156,19 @@ function averageOfArray(numbers) {
   return total;
 }
 
-console.log(averageOfArray([2, 4, 6])); // Expected: 4
+// console.log(averageOfArray([2, 4, 6])); // Expected: 4
+
+
+// Problem 10 statement: Write a function keepEvenNumbers that takes an array of numbers and returns a new array with only the even numbers.
+
+function keepEvenNumbers(numbers) {
+  let result = [];
+  for (const eachNumber of numbers) {
+    if (eachNumber % 2 === 0) {
+     result.push(eachNumber)
+    }
+  } 
+  return result;
+}
+ 
+// console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
