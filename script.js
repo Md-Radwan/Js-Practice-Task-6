@@ -237,3 +237,15 @@ let total = countArray(longWords);
  
 // console.log(longWords); // Expected: ["elephant", "hippopotamus"]
 // console.log(total);     // Expected: 2
+
+
+// Problem 14 Statement: Write a function isPerfectSquare that takes a number and returns true if it is a perfect square, otherwise false.
+
+function isPerfectSquare(num) {
+  // TODO: write your logic here
+  return Number.isInteger(Math.sqrt(num))
+ 
+}
+ 
+// console.log(isPerfectSquare(16)); // Expected: true
+// console.log(isPerfectSquare(20)); // Expected: false
