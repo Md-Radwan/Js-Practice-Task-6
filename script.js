@@ -127,7 +127,6 @@ console.log(findShortestWord("Hello, my friend!")); // Expected: "my"
 function findSecondSmallest(numbers) {
   let smallest = numbers[0];
   let secondSmallest = numbers[1];
-  // TODO: loop through and update smallest/secondSmallest correctly
   for (let i = 0; i < numbers.length; i++) {
     let current = numbers[i];
     if (current < smallest) {
@@ -143,3 +142,18 @@ function findSecondSmallest(numbers) {
  
 console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
 
+
+// Problem 9 statement: Write a function averageOfArray that takes an array of numbers and returns their average.
+
+function averageOfArray(numbers) {
+  let total = 0;
+  let sum = 0;
+  for (const number of numbers) {
+    let totalSum = sum += number
+    total = totalSum / numbers.length
+  }
+  console.log(sum)
+  return total;
+}
+
+console.log(averageOfArray([2, 4, 6])); // Expected: 4
