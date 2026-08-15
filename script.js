@@ -249,3 +249,15 @@ function isPerfectSquare(num) {
  
 // console.log(isPerfectSquare(16)); // Expected: true
 // console.log(isPerfectSquare(20)); // Expected: false
+
+
+// Problem 15 statement: Problem Statement: Write a function reverseWords that takes a sentence and returns it with the order of the words reversed (the letters inside each word stay the same).
+
+
+function reverseWords(sentence) {
+  let reverseSentenceWord = sentence.split(' ').reverse()
+  let reverseSentence = reverseSentenceWord.join(' ')
+  return reverseSentence;
+}
+ 
+// console.log(reverseWords("hello world")); // Expected: "world hello"
